@@ -31,7 +31,7 @@ public class UserController {
         userRepository.save(user);
     }
 
-    @GetMapping("/{search]")
+    @GetMapping("/{search}")
     public ResponseEntity<List<User>> getUser(@PathVariable String search) {
         List<User> users = userRepository.getByCustomQuery(search);
         return ResponseEntity.ok(users);
