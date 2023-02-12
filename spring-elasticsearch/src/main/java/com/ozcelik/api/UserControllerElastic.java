@@ -1,7 +1,7 @@
-package com.ozcelik.entity.api;
+package com.ozcelik.api;
 
 import com.ozcelik.entity.User;
-import com.ozcelik.entity.repository.UserRepository;
+import com.ozcelik.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class UserControllerElastic {
 
     private final UserRepository userRepository;
     
